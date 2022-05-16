@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="icon" href="imagenes/logo_navbar.png">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="main-header__container">
+
+                <!-- TITULO ENCABEZADO -->
+                <h1 class="main-header__title">THE LAST OF US</h1>
+                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+                <nav class="main-nav" id="main-nav">
+
+                    <!-- BOTONES MENÚ -->
+                    <ul class="menu">
+                        <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Sobre Nosotros</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Herramientas</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Tienda</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+                    </ul>
+
+
+                </nav>
+            </div>
+
+            <!-- APARTADO AYUDA -->
+            <div class="main-header__container">
+                <span class="main-header__txt">¿Necesitas Ayuda?</span>
+                <p class="main-header__txt"><i class="fas fa-phone"></i> Llama al 123456789</p>
+            </div>
+
+            <!-- CARRITO COMPRA -->
+            <div class="main-header__container">
+                <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+                <a href="" class="main-header__btn">Carrito <i class="fas fa-shopping-cart"></i></a>
+                <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- SLIDERS -->
+    <div class="container-slider">
+        <div class="slider" id="slider">
+
+            <!-- SLIDER 1 -->
+            <div class="slider__section">
+                <img src="imagenes/ellieshop.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Ropa para mujer</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+            </div>
+
+            <!-- SLIDER 2 -->
+            <div class="slider__section">
+                <img src="imagenes/joelshop.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Ropa para hombre</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+            </div>
+
+            <!-- SLIDER 3 -->
+            <div class="slider__section">
+                <img src="imagenes/ellieshop.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Ropa para mujer</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+            </div>
+
+            <!-- SLIDER 4 -->
+            <div class="slider__section">
+                <img src="imagenes/joelshop.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Ropa para hombre</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- BOTONES SLIDERS -->
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <main class="main">
+        <div class="container">
+            <h2 class="main-title">Novedades</h2>
+            <section class="container-products">
+
+                <!-- PRODUCTO 1 -->
+                <div class="product">
+                    <img src="imagenes/camisetamujer.jpg" alt="" class="product__img">
+                    <div class="product__description">
+                        <h3 class="product__title">Camiseta Deportiva Luciérnaga (Mujer)</h3>
+                        <span class="product__price">49.99€</span>
+                    </div>
+                    <i class="product__icon fas fa-cart-plus"></i>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="product">
+                    <img src="imagenes/camisetahombre.jpg" alt="" class="product__img">
+                    <div class="product__description">
+                        <h3 class="product__title">Camiseta Deportiva Luciérnaga (Hombre)</h3>
+                        <span class="product__price">49.99€</span>
+                    </div>
+                    <i class="product__icon fas fa-cart-plus"></i>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="product">
+                    <img src="imagenes/sudaderamujer.png" alt="" class="product__img">
+                    <div class="product__description">
+                        <h3 class="product__title">Sudadera Luciérnaga (Mujer)</h3>
+                        <span class="product__price">69.99€</span>
+                    </div>
+                    <i class="product__icon fas fa-cart-plus"></i>
+                </div>
+
+                <!-- PRODUCTO 4 -->
+                <div class="product">
+                    <img src="imagenes/sudaderahombre.png" alt="" class="product__img">
+                    <div class="product__description">
+                        <h3 class="product__title">Sudadera Luciérnaga (Hombre)</h3>
+                        <span class="product__price">69.99€</span>
+                    </div>
+                    <i class="product__icon fas fa-cart-plus"></i>
+                </div>
+            </section>
+
+            <!-- RESEÑA -->
+            <section class="container__testimonials">
+                <h2 class="section__title">Reseña</h2>
+                <h3 class="testimonial__title">Josefina</h3>
+                <p class="testimonial__txt">Me queda que parece que se ha hecho a medida para mí. La tela no es muy gruesa y queda un poco suelta, pero se ve genial y abriga perfectamente la ropa de esta tienda.</p>
+            </section>
+            <div class="container-editor">
+
+                <!-- TEXTO EN LAS IMAGENES -->
+                <div class="editor__item">
+                    <img src="imagenes/opinion1.jpg" alt="" class="editor__img">
+                    <p class="editor__circle">CONVIERTETE EN LUCIÉRNAGA</p>
+                </div>
+                <div class="editor__item">
+                    <img src="imagenes/opinion2.jpg" alt="" class="editor__img">
+                    <p class="editor__circle">CONVIERTETE EN LUCIÉRNAGA</p>
+                </div>
+            </div>
+
+            <!-- TEXTOS INFORMACIÓN ADICIONAL -->
+            <section class="container-tips">
+                <div class="tip">
+                    <i class="far fa-hand-paper"></i>
+                    <h2 class="tip__title">Satisfacción Garantizada</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-rocket"></i>
+                    <h2 class="tip__title">Envío Rápido</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-cog"></i>
+                    <h2 class="tip__title">100% <Po></Po>liéster</h2>
+                    <a href="" class="btn-shop">COMPRA YA</a>
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Sobre Nosotros</h2>
+            <p class="footer__txt">Grandes fánaticos de la saga "The Last Of Us" compartiendo nuestra pasión por este título con la comunidad ofreciendo los mejores productos.</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Localización :</h2>
+            <p class="footer__txt">Eficicio C, Universidad Alfonso X El Sabio, Villanueva de la Cañada</p>
+            <h2 class="footer__title">Contacto</h2>
+            <p class="footer__txt">Numero : +34 123 456 789</p>
+            <p class="footer__txt">Email : info@uax.com</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Enlaces Rápidos</h2>
+            <a href="" class="footer__link">Inicio</a>
+            <a href="" class="footer__link">Sobre Nosotros</a>
+            <a href="" class="footer__link">Error</a>
+            <a href="" class="footer__link">Tienda</a>
+            <a href="contact.html" class="footer__link">Contacto</a>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Inicia sesión para disfrutar de nuestras ofertas</h2>
+            <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibiras las últimas noticias y actualizaciones de nuestra web.</p>
+            <input type="email" class="footer__input" placeholder="Introduce tu correo">
+        </div>
+        <p class="copy">© 2022 The Last Of Us. Todos los derechos reservados</p>
+    </footer>
+
+
+    <!-- ANIMACIONES -->
+    <script>
+    let btnMenu = document.getElementById('btn-menu');
+    let mainNav = document.getElementById('main-nav');
+    btnMenu.addEventListener('click', function() {
+        mainNav.classList.toggle('mostrar');
+    });
+
+    const slider = document.querySelector("#slider");
+    let sliderSection = document.querySelectorAll(".slider__section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+
+    const btnLeft = document.querySelector("#btn-left");
+    const btnRight = document.querySelector("#btn-right");
+
+    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+    function Next() {
+        let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+        slider.style.marginLeft = "-200%";
+        slider.style.transition = "all 0.5s";
+        setTimeout(function() {
+            slider.style.transition = "none";
+            slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+            slider.style.marginLeft = "-100%";
+        }, 500);
+    }
+
+    function Prev() {
+        let sliderSection = document.querySelectorAll(".slider__section");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];
+        slider.style.marginLeft = "0";
+        slider.style.transition = "all 0.5s";
+        setTimeout(function() {
+            slider.style.transition = "none";
+            slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+            slider.style.marginLeft = "-100%";
+        }, 500);
+    }
+
+    btnRight.addEventListener('click', function() {
+        Next();
+    });
+
+    btnLeft.addEventListener('click', function() {
+        Prev();
+    });
+
+    setInterval(function() {
+        Next();
+    }, 5000);
+    </script>
+
+    
+</body>
+
+</html>

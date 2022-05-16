@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLOU</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/logo_navbar.png">
+    <link rel="stylesheet" type="text/css" href="https://www.fonts.com/font/canada-type/press-gothic">
+</head>
+
+<body>
+    <div class="vacio"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                
+                <!-- BARRA NAVEGACION -->
+                <header>
+                    <nav id="navbar-example" class=" mt-3  navbar navbar-expand-lg position-absolute top-0 start-50 translate-middle-x">
+                        <div class="container-fluid ">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+
+
+                                    <!-- BOTÓN INICIO -->
+                                    <li class="ps-3 nav-item">
+                                        <a class="nav-link link-light" aria-current="page" href="index.html">Inicio</a>
+                                    </li>
+
+                                    <!-- BOTÓN NOTICIAS -->
+                                    <li class="ps-3 nav-item">
+                                        <a class="nav-link link-light" href="https://thelastofus.es/noticias/" target="_blank">Noticias</a>
+                                    </li>
+
+                                    <!-- BOTÓN SAGA -->
+                                    <li class="ps-3 nav-item">
+                                        <a class="nav-link link-light" aria-current="page" href="https://thelastofus.es/the-last-of-us" target="_blank">Saga</a>
+                                    </li>
+
+
+                                    <!-- LOGO -->
+                                    <a class="ps-5 navbar-brand" href="https://thelastofus.es/" target="_blank"><img class="logo  " src="imagenes/logo_navbar.png" alt=""></a>
+
+
+                                    <!-- BOTÓN TIENDA -->
+                                    <li class="ps-3 nav-item">
+                                        <a class="nav-link link-light" href="shop.html" target="_blank">Tienda</a>
+                                    </li>
+
+
+                                    <!-- BOTÓN COMUNIDAD -->
+                                    <li class="ps-3 nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Comunidad
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="https://thelastofus.es/arte" target="_blank">Arte</a></li>
+                                            <li><a class="dropdown-item" href="https://thelastofus.es/tatuajes/" target="_blank">Tatuajes</a></li>
+                                            <li><a class="dropdown-item" href="https://thelastofus.es/cosplay/" target="_blank">Cosplay</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <!-- BOTÓN CONTACTO -->
+                                    <li class="ps-3 nav-item">
+                                        <a class="nav-link link-light" aria-current="page" href="contact.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+
+
+                <!-- BOTONES LOGIN Y REGISTER -->
+                <div class="position-absolute top-0 end-0 d-grid gap-2 d-md-flex justify-content-md-end mt-4 pe-5 me-5 ">
+                    <!-- BUTTON TRIGGER MODAL LOGIN -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login
+                    </button>
+
+
+                    <!--LOGIN MODAL -->
+                    <div class="modal prueba fade mt-5 pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content fondomodal border ">
+
+                                <!-- IMAGEN LOGIN -->
+                                <div class="modal-header border-0 pt-4 d-block mx-auto">
+                                    <img class="logo1" src="imagenes/logo_navbar.png" alt="">
+                                </div>
+
+                                <!-- FORMULARIO -->
+                                <div class="modal-body">
+                                    <form action="login.php" method="POST">
+
+
+                                        <!-- EMAIL -->
+                                        <div class="mb-3 text-light">
+                                            <label for="exampleInputEmail1 email" class="form-label"></label>
+                                            <br>
+                                            <input placeholder="Correo electrónico" type="text" name="email" class="input" required="">
+                                        </div>
+
+
+                                        <!-- PASSWORD -->
+                                        <div class="mb-3 text-light">
+                                            <label for="exampleInputPassword1" class="form-label"></label>
+                                            <input placeholder="Contraseña" type="password" class="input" name="password" id="exampleInputPassword1">
+                                        </div>
+            
+
+                                        <!-- BOTÓN ENTRAR -->
+                                        <div class="pt-4">
+                                            <button class="submit d-block mx-auto" name="login">Entrar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute top-0 end-0 d-grid gap-2 d-md-flex justify-content-md-end mt-4 ps-5 me-2">
+                    <!-- Button trigger modal login -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Register
+                    </button>
+
+
+
+                    <!--REGISTER MODAL -->
+                    <div class="modal prueba fade mt-5 pt-5" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content fondomodal border ">
+
+                                <!-- IMAGEN REGISTER -->
+                                <div class="modal-header border-0 pt-4 d-block mx-auto">
+                                    <img class="logo1" src="imagenes/logo_navbar.png" alt="">
+                                </div>
+
+
+                                <!-- FORMULARIO REGISTRO -->
+                                <div class="modal-body">
+                                    <form action="process.php" method="POST">
+
+
+                                        <!-- NOMBRE -->
+                                        <div class="mb-3 text-light">
+                                            <label for="name" class="form-label"></label>
+                                            <br>
+                                            <input placeholder="Nombre" type="text" class="input" name="nombre" required="">
+                                        </div>
+
+
+                                        <!-- APELLIDOS -->
+                                        <div class="mb-3 text-light">
+                                            <label for="exampleInputPassword1" class="form-label"></label>
+                                            <input placeholder="Apellidos" type="text" class="input" name="apellidos" id="second-name" required>
+                                        </div>
+
+
+                                        <!-- EMAIL -->
+                                        <div class="mb-3 text-light">
+                                            <label for="exampleInputEmail1 email" class="form-label"></label>
+                                            <br>
+                                            <input placeholder="Correo electrónico" type="text" class="input" name="email" required="">
+                                        </div>
+
+
+                                        <!-- PASSWORD -->
+                                        <div class="mb-3 text-light">
+                                            <label for="exampleInputPassword1" class="form-label"></label>
+                                            <input placeholder="Contraseña" type="password" class="input" id="exampleInputPassword1" name="contraseña" maxlength="12" required>
+                                        </div>
+
+
+                                        <!-- BOTÓN REGISTRAR -->
+                                        <div class="pt-4">
+                                            <button class="submit d-block mx-auto" name="save">Registrar</button>
+                                        </div>
+
+
+                                    </form>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- VACÍO -->
+        <div class="col-12 mt-5 pt-5"></div>
+
+
+    </div>
+
+
+    <!-- IMAGEN PORTADA Y CAROUSEL -->
+    <section>
+
+        <!-- IMAGEN PORTADA -->
+        <div class="tlou">
+            <img src="imagenes/tloulogo.png" alt="">
+        </div>
+
+
+        <!-- CAROUSEL -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- SLIDER 1 -->
+                <div class="carousel-item active">
+
+                    <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal0">
+
+                            <!-- IMAGEN SILDER 1 -->
+                            <img src="imagenes/zombie2.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 1 -->
+                        <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-5">CORREDOR</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center">
+                                        <p>El hongo conocido como Cordyceps unilateralis, crece mientras el huésped aún está vivo. Empieza dentro de los dos días posteriores a la infección, en donde el huésped pierde su función cerebral superior y su humanidad, siendo muy agresivo e incapaz de razonar o pensar de forma racional.</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                 <!-- SLIDER 2 -->
+                <div class="carousel-item">
+
+                    < <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+
+                            <!-- IMAGEN SILDER 2 -->
+                            <img src="imagenes/zombie3.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 2 -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-5">ACECHADOR</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center ">
+                                        <p>Entre una semana y un mes, el huésped llega a la fase dos de la infección, se le empieza a alterar la vista como resultado del crecimiento del hongo y de forma progresiva sobre la cabeza cicatrizando su rostro y creando una corrupción en su corteza visual.</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDER 3 -->
+                <div class="carousel-item">
+
+                    < <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+
+                            <!-- IMAGEN SILDER 3 -->
+                            <img src="imagenes/zombie4.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 3 -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-4">CHASQUEADOR</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center ">
+                                        <p>Después de un año de infección la fase tres da inicio, creando una gran zona fúngica en prácticamente toda la cabeza dejándolo ciego, lo que hace que desarrolle una forma primitiva de ecolocación para compensar. En casos muy raros, si el huésped sobrevive durante más de una década, alcanzará la fase cuatro. ¿Sabrías reconocer los distintos infectados?</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+
+                <!-- SLIDER 4 -->
+                <div class="carousel-item">
+
+                    < <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+
+                            <!-- IMAGEN SILDER 4 -->
+                            <img src="imagenes/zombie5.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 4 -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-5">TAMBALEANTE</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center ">
+                                        <p>Es una cuarta fase alternativa. Al exponerse al agua debido a lluvias abundantes en las zonas de Seattle y Santa Bárbara, es cuando nos encontramos este tipo de infección. El cual se desarrolla en un tiempo parecido al del Hinchado.</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+
+                <!-- SLIDER 5 -->
+                <div class="carousel-item">
+
+                    < <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+
+                            <!-- IMAGEN SILDER 5 -->
+                            <img src="imagenes/zombie6.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 5 -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-5">HINCHADO</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center ">
+                                        <p>En la última fase desarrollará placas fúngicas endurecidas sobre la mayor parte de su cuerpo. Perderá la velocidad al tener un cuerpo más pesado, pero tendrá más resistencia e incluso tendrá la posibilidad de enviar esporas.</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+
+                <!-- SLIDER 6 -->
+                <div class="carousel-item">
+
+                    < <div class="zombie1">
+
+                        <button type="button" class="boton border-0 d-block mx-auto mt-5 pt-5" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+
+                            <!-- IMAGEN SILDER 6 -->
+                            <img src="imagenes/zombie7.png" class="d-block mx-auto w-100" alt="">
+                        </button>
+
+
+                        <!-- MODAL 6 -->
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content infectado">
+
+                                    <!-- CONTENIDO DEL MODAL -->
+                                    <div class="modal-header ms-5 ps-5 border-0">
+                                        <h5 class="text-center ms-5 ps-5">REY RATA</h5>
+                                       
+                                    </div>
+
+
+                                    <div class="modal-body text-center ">
+                                        <p>Un caso único debido a su naturaleza. Este caso se empezó a gestionar con los primeros espécimenes en la Zona Zero y durante 25 años se fue nutriendo de varios corredores, acechadores, chasqueadores y un hinchado, produciendo este aspecto único.</p>
+                                    </div>
+
+
+                                    <div class="modal-footer border-0">
+
+
+                                        <!-- BOTÓN CERRAR -->
+                                       <button type="button" data-bs-dismiss="modal" aria-label="Close" class="submit d-block mx-auto">Cerrar</button>
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- BOTONES CAROUSEL -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- VIDEO TRÁILER -->
+    <div class="video">
+        
+        <video controls autoplay muted preload loop src="video/trailer.mp4"></video>
+                   
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
