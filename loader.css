@@ -1,0 +1,25 @@
+body{
+
+    background-color: rgb(32, 33, 36) !important;
+}
+
+/*ANIMACIÓN PARPADEO*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    animation: blink 2s;
+    animation-iteration-count: infinite;
+    width: 10% !important; 
+    height: auto !important;
+
+}
